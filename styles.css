@@ -1,0 +1,22 @@
+.grid {
+    display: flex;
+}
+
+.row {
+    border: 1px solid black;
+    margin: 0px;
+    display: flex;
+    /* flex: 1; */
+    height: 50px;
+    width: 50px;
+}
+
+.column {
+    /* border: 1px solid black; */
+    margin: 0px;
+    /* flex: 1; */
+    height: 50px;
+    width: 50px;
+}
+
+
