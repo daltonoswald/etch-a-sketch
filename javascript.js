@@ -6,7 +6,6 @@ function randomColor() {
     return bgColor;
 }
 randomColor();
-console.log(randomColor())
 
 function makeGrid(rows, columns){
 const container = document.querySelector('.container');
