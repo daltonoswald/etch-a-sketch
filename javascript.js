@@ -1,3 +1,13 @@
+function randomColor() {
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    const bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    return bgColor;
+}
+randomColor();
+console.log(randomColor())
+
 function makeGrid(rows, columns){
 const container = document.querySelector('.container');
 
@@ -13,7 +23,7 @@ for (let i = 0; i < columns; i++) {
     }
     grid.appendChild(column);
     column.addEventListener('mouseover', (e) => {
-        e.target.style.background = 'black';
+        e.target.style.background = randomColor();
     });
 }
 container.appendChild(grid);
