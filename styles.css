@@ -11,7 +11,7 @@ html {
 }
 
 .grid {
-    /* background-color: blueviolet; */
+    background-color: white;
     border: 1px solid black;
     display: flex;
     justify-content: center;

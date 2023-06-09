@@ -22,7 +22,17 @@ for (let i = 0; i < columns; i++) {
     }
     grid.appendChild(column);
     column.addEventListener('mouseover', (e) => {
-        e.target.style.background = randomColor();
+         //sets a random color when hovered
+        // e.target.style.background = randomColor();
+        
+         //sets black when hovered
+        // e.target.style.background = 'black';
+
+        //sets background to get darker every mouseover
+        e.target.style.background = 'black';
+        if (!e.target.style.opacity) e.target.style.opacity = "0";
+        opacity = parseFloat(e.target.style.opacity);
+        e.target.style.opacity = opacity + 0.2;
     });
 }
 container.appendChild(grid);
