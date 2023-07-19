@@ -45,3 +45,14 @@ html {
     margin: 52px auto;
 }
 
+.color-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.radio-options {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+}

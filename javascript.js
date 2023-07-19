@@ -22,19 +22,26 @@ for (let i = 0; i < columns; i++) {
     }
     grid.appendChild(column);
     column.addEventListener('mouseover', (e) => {
-         //sets a random color when hovered
-        // e.target.style.background = randomColor();
-        
-         //sets black when hovered
-        // e.target.style.background = 'black';
+        if(document.getElementById('random-toggle').checked) {
+            //sets a random color when hovered
+            e.target.style.background = randomColor();
+            e.target.style.opacity = 1;
+        }else if(document.getElementById('black-toggle').checked) {
 
-        //sets background to get darker every mouseover
-        e.target.style.background = 'black';
-        if (!e.target.style.opacity) e.target.style.opacity = "0";
-        opacity = parseFloat(e.target.style.opacity);
-        e.target.style.opacity = opacity + 0.2;
+            //sets black when hovered
+            e.target.style.background = 'black';
+            e.target.style.opacity = 1;
+        // }else if(document.getElementById('gradient-toggle').checked) {
+
+            //sets background to get darker every mouseover
+            // e.target.style.background = 'black';
+            // if (!e.target.style.opacity) e.target.style.opacity = "0";
+            // opacity = parseFloat(e.target.style.opacity);
+            // e.target.style.opacity = opacity + 0.2;
+        }
     });
 }
+
 container.appendChild(grid);
 }
 makeGrid(5,5);
